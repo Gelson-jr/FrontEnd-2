@@ -2,6 +2,10 @@ const display = document.querySelector('#display')
 
 const teclado = document.querySelector('.keys')
 
+let entradaAtual = '0'
+let valorAnterior = null
+let operador = null
+
 teclado.addEventListener('click', (e) => {
     const botao = e.target
     if ( !botao) return
